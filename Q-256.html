@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input[type=text]:focus
+        {
+            background-color: lightgreen;
+        }
+        input[type=password]:hover,input[type=phone]:hover{
+            font-size: large;
+        }
+        
+        label:active{
+            color: blue;
+        }
+        input[type=submit]:hover,input[type=reset]:hover{
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend align="center">Registration form</legend>
+            Name:<input type="text">
+            <br><br>
+            Password: <input type="password">
+            <br><br>
+            Contact Number: <input type="phone">
+            <br><br>
+            Gender: <label>Male<input type="radio" name="gen"></label> <label>Female <input type="radio" name="gen"></label>
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
