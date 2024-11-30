@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(blue,yellow);
+            animation: ex 3s 0.3s infinite alternate;
+            
+        }
+
+        @keyframes ex{
+            0% {
+                transform: rotate(0deg); /* Start at 0 degrees */
+            }
+            50% {
+                transform: rotate(-360deg); /* Rotate counter-clockwise */
+            }
+            100% {
+                transform: rotate(0deg); /* Return to original position clockwise */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Rotating Heading</h1>
+</body>
+</html>
