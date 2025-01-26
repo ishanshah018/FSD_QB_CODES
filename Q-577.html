@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script>
+        function f1(id)
+        {
+            id.style.backgroundColor="red";
+            const text=id.value.toLowerCase();
+            document.getElementById("output").innerHTML=text;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="output"></p>
+    <input type="text" onblur="f1(this)"/>
+</body>
+</html>
