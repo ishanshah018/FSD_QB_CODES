@@ -1,0 +1,29 @@
+<!--  Write a JavaScript to accept a number from user & check whether it is 
+Armstrong number or not. (Hint: Armstrong number means the summation 
+of cubes of all the three digits of the number should be exactly to the 
+number) 
+E.g., 153= (1*1*1) +(5*5*5) +(3*3*3) -->
+
+<html>
+<head>
+    <script>
+        var num=parseInt(prompt("Enter a 3 digit number: "));
+
+        var temp=num;
+        var sum=0;
+
+        while(temp>0){
+            digit=temp%10;
+            sum+=Math.pow(digit,3);
+            temp=parseInt(temp/10);
+        }
+
+        if(sum===num){
+            document.write("It is a ArmStrong Number");
+        }
+        else{
+            document.write("It is not a ArmStrong Number")
+        }
+    </script>
+</head>
+</html>

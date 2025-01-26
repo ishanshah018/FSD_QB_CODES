@@ -1,0 +1,24 @@
+<!-- 
+Write a JS to solve following series by given x and n values from user:     
+1-x+x2-x3+x4-x5+…+xn 
+-->
+
+<html>
+<head>
+    <script>
+        var x=prompt("Enter x: ");
+        var n=prompt("Enter n: ")
+
+        sign=-1
+        sum=1
+
+        for(var i=1;i<=n;i++)
+        {
+            sum+=sign*Math.pow(x,i);
+            sum*=-1;  //Changing sign for next term
+        }
+
+        document.write("The result of series is: ",sum)
+    </script>
+</head>
+</html>

@@ -1,0 +1,22 @@
+<!--  Write java script program to check occurrence of a given character in to 
+string entered by user. (For ex., If you check the number of occurrences of 'o' 
+in the string 'school', the result is 2.) -->
+
+<html>
+<head>
+    <script>
+        var str=prompt("Enter String: ");
+        var check=prompt("Enter Character to check: ");
+
+        var count=0;
+
+        for(var i=0;i<str.length;i++){
+            if(str[i]===check){
+                count++
+            }
+        }
+
+        document.write("Total occurence of Character is: ",count);
+    </script>
+</head>
+</html>

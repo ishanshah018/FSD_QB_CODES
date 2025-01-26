@@ -1,0 +1,18 @@
+<!--  Write a JAVAScript to take 2 digit number and then separate these 2 digits, 
+then multiply first digit by itself for second digit times.( for example, 23 
+should be separated as 2 and 3. 2 should multiply with itself 3 times).  -->
+
+<html>
+<head>
+    <script>
+        num=parseInt(prompt("Enter 2 digit Number: "));
+        fd=parseInt(num/10)
+        ld=num%10;
+        
+        multi=Math.pow(fd,ld);
+
+        document.write(multi)
+        
+    </script>
+</head>
+</html>
